@@ -17,6 +17,10 @@ import org.threeten.bp.temporal.TemporalAdjusters;
  * Write an example that, for a given year, reports the length of each month
  * within that year.
  * 
+ * See <a href=
+ * "http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/ListMondays.java">
+ * ListMondays.java</a>
+ * 
  * @author Sualeh Fatehi
  */
 public class Exercise2 {
@@ -26,16 +30,13 @@ public class Exercise2 {
 		if (month == null) {
 			return mondays;
 		}
-		int i = 1;
-		LocalDate date = LocalDate.of(year, month, 1);
-		while (true) {
-			date = date.with(TemporalAdjusters.dayOfWeekInMonth(i,
-					DayOfWeek.MONDAY));
-			if (date.getMonth() != month) {
-				break;
-			}
+		LocalDate date = LocalDate.of(year, month, 1).with(
+				TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY));
+		Month monthForDate = date.getMonth();
+		while (monthForDate == month) {
 			mondays.add(date);
-			i++;
+			date = date.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+			monthForDate = date.getMonth();
 		}
 		return mondays;
 	}
