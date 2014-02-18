@@ -17,7 +17,7 @@ import org.threeten.bp.Year;
  * 
  * @author Sualeh Fatehi
  */
-public class Example1 {
+public class Exercise1 {
 
 	public List<Integer> getMonthLengths(final int year) {
 		final boolean leapYear = Year.isLeap(year);

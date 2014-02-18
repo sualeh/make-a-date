@@ -12,13 +12,13 @@ import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestExample1 {
+public class TestExercise1 {
 
-	private Example1 example1;
+	private Exercise1 exercise1;
 
 	@Before
 	public void setup() {
-		example1 = new Example1();
+		exercise1 = new Exercise1();
 	}
 
 	@Test
@@ -26,11 +26,11 @@ public class TestExample1 {
 
 		assertEquals(
 				Arrays.asList(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31),
-				example1.getMonthLengths(2014));
+				exercise1.getMonthLengths(2014));
 
 		assertEquals(
 				Arrays.asList(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31),
-				example1.getMonthLengths(2012));
+				exercise1.getMonthLengths(2012));
 	}
 
 }
