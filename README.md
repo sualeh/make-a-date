@@ -1,6 +1,6 @@
-# Java 8 Time API Examples
+# Java 8 Time API Examples (in Java 7)
 
-Solutions to [Java 8 Time API Examples]. This project uses the  [ThreeTen] libraries to allow you to use the Java 8 Time API in Java 7. (Of course, the package names are different.) This project also includes JUnit tests to explain how the code should behave.
+Solutions to [Java 8 Time API Examples], using Java 7. This project uses the  [ThreeTen] libraries to allow you to use the Java 8 Time API in Java 7. (Of course, the package names are different.) This project also includes JUnit tests to explain how the code should behave.
 
 ## How to Use
 
