@@ -3,7 +3,7 @@
  * This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US.
  */
-package us.fatehi.timeapi;
+package us.fatehi.timeapi.exercises;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -18,6 +18,8 @@ import org.threeten.bp.Month;
 import org.threeten.bp.ZoneId;
 import org.threeten.bp.ZoneOffset;
 import org.threeten.bp.ZonedDateTime;
+
+import us.fatehi.timeapi.exercises.Question4;
 
 public class TestQuestion4 {
 
