@@ -1,4 +1,4 @@
-package us.fatehi.timeapi.problems;
+package us.fatehi.timeapi.oldapiproblems;
 
 public interface ApiSnippets {
 
