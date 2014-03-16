@@ -28,9 +28,9 @@ public class NewDateApiSnippets implements ApiSnippets {
 
 	@Override
 	public void problemsWithDate() {
-		// Several problems here:
-		// 1. ISO 8601 order - year, month, day?
-		// 2. Month 12 is for December, right?
+		// No problems here:
+		// 1. ISO 8601 order of fields - year, month, day.
+		// 2. Month 12 is for December.
 		// 3. Year is really 12 AD.
 		System.out.println(LocalDate.of(12, 12, 12));
 		// 0012-12-12
