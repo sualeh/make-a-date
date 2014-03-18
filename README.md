@@ -1,4 +1,5 @@
-# Java 8 Date and Time API (in Java 7 and Java 8)
+# Java 8 Date and Time API 
+> Code in Java 7 and Java 8
 
 Presentation on the new Java 8 Date and Time API. PowerPoint included. Fully working code examples included. Solutions to [Java 8 Time API Examples] included as well. This project also includes JUnit tests to explain how the code should behave.
 

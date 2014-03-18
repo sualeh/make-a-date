@@ -15,13 +15,17 @@ import org.threeten.bp.ZonedDateTime;
 public class NewDateApiSnippets implements ApiSnippets {
 
 	public static void main(final String[] args) {
-		final ApiSnippets newDate = new NewDateApiSnippets();
+		final NewDateApiSnippets newDate = new NewDateApiSnippets();
 		newDate.problemsWithDate();
+		newDate.problemsWithDate2();
 		newDate.changingTimeZone();
+		newDate.changingTimeZone2();
 	}
 
 	@Override
 	public void changingTimeZone() {
+		System.out.println("changingTimeZone:");
+		
 		final ZonedDateTime date = ZonedDateTime.of(
 				LocalDateTime.of(12, 12, 12, 0, 0, 0), ZoneId.systemDefault());
 		System.out.println(date);
@@ -29,6 +33,22 @@ public class NewDateApiSnippets implements ApiSnippets {
 		// Move to another system, with another timezone
 		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
 		System.out.println(date);
+	}
+
+	public void changingTimeZone2() {
+		System.out.println("changingTimeZone2:");
+
+		TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
+
+		final ZonedDateTime date = ZonedDateTime.of(
+				LocalDateTime.of(2014, 12, 12, 0, 0, 0),
+				ZoneId.systemDefault());
+		System.out.println(date);
+
+		// Change timezone
+		ZonedDateTime withZoneSameDate = date.withZoneSameInstant(ZoneId
+				.of("Asia/Calcutta"));
+		System.out.println(withZoneSameDate);
 	}
 
 	@Override
@@ -41,8 +61,14 @@ public class NewDateApiSnippets implements ApiSnippets {
 		// 0012-12-12
 		// 4. No time component.
 		// 5. No timezone component.
-		
-		System.out.println(LocalDate.of(13, 13, 13));
+	}
+
+	public void problemsWithDate2() {
+		try {
+			System.out.println(LocalDate.of(13, 13, 13));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

@@ -11,16 +11,31 @@ import java.util.TimeZone;
 public class OldDateApiSnippets implements ApiSnippets {
 
 	public static void main(final String[] args) {
-		final ApiSnippets oldDate = new OldDateApiSnippets();
+		final OldDateApiSnippets oldDate = new OldDateApiSnippets();
 		oldDate.problemsWithDate();
 		oldDate.changingTimeZone();
+		oldDate.changingTimeZone2();
 	}
 
 	@Override
 	public void changingTimeZone() {
+		System.out.println("changingTimeZone");
+		
 		final Date date = new Date(10, 10, 10);
 		System.out.println(date);
-		
+
+		// Move to another system, with another timezone
+		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
+		System.out.println(date);
+	}
+
+	public void changingTimeZone2() {
+		System.out.println("changingTimeZone2");
+				
+		TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
+		final Date date = new Date(114, 11, 12, 0, 0, 0);
+		System.out.println(date);
+
 		// Move to another system, with another timezone
 		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
 		System.out.println(date);

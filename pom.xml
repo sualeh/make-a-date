@@ -5,6 +5,9 @@
 	<artifactId>java8-timeapi-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Java 8 Time API Examples</name>
+  <properties>
+    <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+  </properties>  
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,8 +29,8 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupid>org.apache.maven.plugins</groupid>
-				<artifactid>maven-compiler-plugin</artifactid>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>
 				<configuration>
 					<source>1.7</source>
