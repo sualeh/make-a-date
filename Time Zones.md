@@ -7,15 +7,15 @@
 
 ## Time Zones in the US
 
-- Atlantic Standard Time (AST) -04/ -03
-- Eastern Standard Time (EST) -05/ -04
-- Central Standard Time (CST) -06/ -05
-- Mountain Standard Time (MST) -07/ -06
-- Mountain Standard Time (MST) in Arizona -07
-- Pacific Standard Time (PST) -08/ -07
-- Alaskan Standard Time (AKST) -09/ -08
-- Hawaii-Aleutian Standard Time (HST) -10/ -09
-- Samoa standard time (UTC-11) -11/ -10
-- Chamorro Standard Time (UTC+10) +10/ +11
+- Atlantic Standard Time (AST) (UTC-04)/ (UTC-03)
+- Eastern Standard Time (EST) (UTC-05)/ (UTC-04)
+- Central Standard Time (CST) (UTC-06)/ (UTC-05)
+- Mountain Standard Time (MST) (UTC-07)/ (UTC-06)
+- Mountain Standard Time (MST) in Arizona (UTC-07)
+- Pacific Standard Time (PST) (UTC-08)/ (UTC-07)
+- Alaskan Standard Time (AKST) (UTC-09)/ (UTC-08)
+- Hawaii-Aleutian Standard Time (HST) (UTC-10)/ (UTC-09)
+- Samoa Standard Time (UTC-11) (UTC-11)/ (UTC-10)
+- Chamorro Standard Time (UTC+10) (UTC+10)/ (UTC+11)
  
 (See http://goo.gl/DUkodg)
