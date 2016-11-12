@@ -23,4 +23,4 @@
 [Java 8]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Eclipse]: https://www.eclipse.org/downloads/
 [Java 8 Time API Examples]: http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html
-[Presentation on the Java 8 Date and Time API]: https://docs.google.com/presentation/d/1XfWjH8erWqTc9ixVh3UKkDGworZfsIn3L1QQqRGwVcg/edit?usp=sharing
+[Presentation on the Java 8 Date and Time API]: https://docs.google.com/presentation/d/1XfWjH8erWqTc9ixVh3UKkDGworZfsIn3L1QQqRGwVcg/present?usp=sharing
