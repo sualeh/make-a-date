@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - java8
+os:
+  - linux
+sudo: false
+notifications:
+  on_success:
+    - change
+  on_failure:
+    - change
+cache:
+  directories:
+    - .autoconf
+    - $HOME/.m2
