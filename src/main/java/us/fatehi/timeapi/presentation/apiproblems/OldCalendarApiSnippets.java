@@ -16,15 +16,6 @@ public class OldCalendarApiSnippets
   implements ApiSnippets
 {
 
-  public static void main(final String[] args)
-  {
-    final ApiSnippets oldCalendar = new OldCalendarApiSnippets();
-    oldCalendar._problemsWithDate();
-    System.out.println();
-
-    oldCalendar.changingTimeZone();
-  }
-
   private final DateFormat format = SimpleDateFormat
     .getDateTimeInstance(DateFormat.LONG,
                          DateFormat.LONG,
@@ -33,9 +24,13 @@ public class OldCalendarApiSnippets
   @Override
   public void _problemsWithDate()
   {
+    System.out.println("Old Calendar API");
+    System.out.println("new GregorianCalendar(12, 12, 12)");
+
     System.out.println(new GregorianCalendar(12, 12, 12));
     // Prints internals
 
+    System.out.println();
     print(new GregorianCalendar(12, 12, 12));
     // January 12, 0013 12:00:00 AM EST
 
@@ -57,6 +52,12 @@ public class OldCalendarApiSnippets
     // Move to another system, with another timezone
     TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
     print(calendarDate);
+  }
+
+  @Override
+  public void printAdditionalInformation()
+  {
+    changingTimeZone();
   }
 
   private void print(final GregorianCalendar calendarDate)

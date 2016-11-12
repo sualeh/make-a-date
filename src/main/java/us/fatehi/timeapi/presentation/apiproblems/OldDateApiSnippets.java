@@ -13,19 +13,12 @@ public class OldDateApiSnippets
   implements ApiSnippets
 {
 
-  public static void main(final String[] args)
-  {
-    final OldDateApiSnippets oldDate = new OldDateApiSnippets();
-    oldDate._problemsWithDate();
-    System.out.println();
-
-    oldDate.changingTimeZone();
-    oldDate.changingTimeZoneAlternate();
-  }
-
   @Override
   public void _problemsWithDate()
   {
+    System.out.println("Old Date API");
+    System.out.println("new Date(12, 12, 12)");
+
     System.out.println(new Date(12, 12, 12));
     // Sun Jan 12 00:00:00 EST 1913
 
@@ -61,6 +54,13 @@ public class OldDateApiSnippets
     // Move to another system, with another timezone
     TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
     System.out.println(date);
+  }
+
+  @Override
+  public void printAdditionalInformation()
+  {
+    changingTimeZone();
+    changingTimeZoneAlternate();
   }
 
 }

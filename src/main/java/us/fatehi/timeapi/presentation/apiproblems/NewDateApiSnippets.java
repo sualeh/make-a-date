@@ -16,18 +16,12 @@ public class NewDateApiSnippets
   implements ApiSnippets
 {
 
-  public static void main(final String[] args)
-  {
-    final NewDateApiSnippets newDate = new NewDateApiSnippets();
-    newDate._problemsWithDate();
-    newDate.problemsWithDate2();
-    newDate.changingTimeZone();
-    newDate.changingTimeZone2();
-  }
-
   @Override
   public void _problemsWithDate()
   {
+    System.out.println("Java 8 Date and Time API");
+    System.out.println("LocalDate.of(12, 12, 12)");
+
     System.out.println(LocalDate.of(12, 12, 12));
     // 0012-12-12
 
@@ -67,6 +61,14 @@ public class NewDateApiSnippets
     final ZonedDateTime withZoneSameDate = date
       .withZoneSameInstant(ZoneId.of("Asia/Calcutta"));
     System.out.println(withZoneSameDate);
+  }
+
+  @Override
+  public void printAdditionalInformation()
+  {
+    problemsWithDate2();
+    changingTimeZone();
+    changingTimeZone2();
   }
 
   public void problemsWithDate2()

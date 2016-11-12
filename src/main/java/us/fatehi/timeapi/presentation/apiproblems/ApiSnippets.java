@@ -9,8 +9,10 @@ package us.fatehi.timeapi.presentation.apiproblems;
 public interface ApiSnippets
 {
 
-  public abstract void _problemsWithDate();
+  void _problemsWithDate();
 
-  public abstract void changingTimeZone();
+  void changingTimeZone();
+
+  void printAdditionalInformation();
 
 }
