@@ -9,6 +9,7 @@ package us.fatehi.timeapi.presentation.apiproblems;
 import java.util.Date;
 import java.util.TimeZone;
 
+@SuppressWarnings("deprecation")
 public class OldDateApiSnippets
   implements ApiSnippets
 {
