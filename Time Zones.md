@@ -2,8 +2,16 @@
 
 ## Country Width and Time Zones
 
-- Both the continental US and China are about 3000 miles wide
-- China has 1 time zone, the US has 10
+>> Both the contiguous states of the US and continental China are about 3000 miles wide 
+>> - how many time zones does each region have?
+
+** China has 1 time zone, the contiguous states of the US have 5 **
+
+- Eastern Standard Time (EST) (UTC-05)/ (UTC-04): (Zone R), which comprises roughly the states on the Atlantic coast and the eastern two thirds of the Ohio Valley.
+- Central Standard Time (CST) (UTC-06)/ (UTC-05): (Zone S), which comprises roughly the Gulf Coast, Mississippi Valley, and Great Plains.
+- Mountain Standard Time (MST) (UTC-07)/ (UTC-06): (Zone T), which comprises roughly the states that include the Rocky Mountains.
+- Pacific Standard Time (PST) (UTC-08)/ (UTC-07): (Zone U), which comprises roughly the states on the Pacific coast, plus Nevada and the Idaho panhandle.
+- Mountain Standard Time (MST) in Arizona (UTC-07): In Arizona, except the Navajo nation.
 
 ## Time Zones in the US
 
