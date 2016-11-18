@@ -34,7 +34,8 @@ public class OldDateApiSnippets
   @Override
   public void changingTimeZone()
   {
-    System.out.println("changingTimeZone2");
+    System.out
+      .println("Changing system default time zone will print two different values for the same date");
 
     TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
     final Date date = new Date(114, 11, 12, 0, 0, 0);
@@ -49,6 +50,7 @@ public class OldDateApiSnippets
   {
     System.out.println("changingTimeZone");
 
+    TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
     final Date date = new Date(10, 10, 10);
     System.out.println(date);
 
@@ -60,7 +62,10 @@ public class OldDateApiSnippets
   @Override
   public void printAdditionalInformation()
   {
+    System.out.println("OldDateApiSnippets.changingTimeZone()");
     changingTimeZone();
+
+    System.out.println("OldDateApiSnippets.changingTimeZoneAlternate()");
     changingTimeZoneAlternate();
   }
 
