@@ -5,28 +5,30 @@
  */
 package us.fatehi.timeapi.presentation.apiproblems;
 
+public class Main {
 
-public class Main
-{
+	public static void main(final String[] args) {
+		final OldDateApiSnippets oldDateApi = new OldDateApiSnippets();
+		final OldCalendarApiSnippets oldCalendarApi = new OldCalendarApiSnippets();
+		final NewDateApiSnippets newDateApi = new NewDateApiSnippets();
 
-  public static void main(String[] args)
-  {
-    final OldDateApiSnippets oldDateApi = new OldDateApiSnippets();
-    final OldCalendarApiSnippets oldCalendarApi = new OldCalendarApiSnippets();
-    final NewDateApiSnippets newDateApi = new NewDateApiSnippets();
+		System.out.println("** " + oldDateApi);
+		System.out.println();
+		oldDateApi.problemsWithDate();
+		System.out.println();
+		System.out.println();
 
-    oldDateApi._problemsWithDate();
-    System.out.println();
-    oldCalendarApi._problemsWithDate();
-    System.out.println();
-    newDateApi._problemsWithDate();
-    System.out.println();
+		System.out.println("** " + oldCalendarApi);
+		System.out.println();
+		oldCalendarApi.problemsWithDate();
+		System.out.println();
+		System.out.println();
 
-    oldDateApi.printAdditionalInformation();
-    System.out.println();
-    oldCalendarApi.printAdditionalInformation();
-    System.out.println();
-    newDateApi.printAdditionalInformation();
-  }
+		System.out.println("** " + newDateApi);
+		System.out.println();
+		newDateApi.problemsWithDate();
+		System.out.println();
+		System.out.println();
+	}
 
 }

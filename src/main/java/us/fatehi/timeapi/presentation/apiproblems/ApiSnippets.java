@@ -5,14 +5,8 @@
  */
 package us.fatehi.timeapi.presentation.apiproblems;
 
+public interface ApiSnippets {
 
-public interface ApiSnippets
-{
-
-  void _problemsWithDate();
-
-  void changingTimeZone();
-
-  void printAdditionalInformation();
+	void problemsWithDate();
 
 }

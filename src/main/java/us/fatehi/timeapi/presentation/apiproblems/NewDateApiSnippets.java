@@ -5,82 +5,36 @@
  */
 package us.fatehi.timeapi.presentation.apiproblems;
 
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.util.TimeZone;
 
-public class NewDateApiSnippets
-  implements ApiSnippets
-{
+public class NewDateApiSnippets implements ApiSnippets {
 
-  @Override
-  public void _problemsWithDate()
-  {
-    System.out.println("Java 8 Date and Time API");
-    System.out.println("LocalDate.of(12, 12, 12)");
+	@Override
+	public void problemsWithDate() {
+		System.out.print("LocalDate.of(12, 12, 12) // ");
 
-    System.out.println(LocalDate.of(12, 12, 12));
-    // 0012-12-12
+		System.out.println(LocalDate.of(12, 12, 12));
+		// 0012-12-12
 
-    // No problems here:
-    // 1. ISO 8601 order of fields - year, month, day.
-    // 2. Month 12 is for December.
-    // 3. Year is really 12 AD.
-    // 4. No time component.
-    // 5. No timezone component.
-  }
+		// No problems here:
+		// 1. ISO 8601 order of fields - year, month, day.
+		// 2. Month 12 is for December.
+		// 3. Year is really 12 AD.
+		// 4. No time component.
+		// 5. No timezone component.
 
-  @Override
-  public void changingTimeZone()
-  {
-    System.out.println("changingTimeZone:");
+		System.out.println();
+		System.out.println("LocalDate.of(13, 13, 13)");
+		try {
+			System.out.println(LocalDate.of(13, 13, 13));
+		} catch (final Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-    final ZonedDateTime date = ZonedDateTime
-      .of(LocalDateTime.of(12, 12, 12, 0, 0, 0), ZoneId.systemDefault());
-    System.out.println(date);
-
-    // Move to another system, with another timezone
-    TimeZone.setDefault(TimeZone.getTimeZone("Asia/Calcutta"));
-    System.out.println(date);
-  }
-
-  public void changingTimeZone2()
-  {
-    System.out.println("changingTimeZone2:");
-
-    TimeZone.setDefault(TimeZone.getTimeZone("America/New_York"));
-
-    final ZonedDateTime date = ZonedDateTime
-      .of(LocalDateTime.of(2014, 12, 12, 0, 0, 0), ZoneId.systemDefault());
-    System.out.println(date);
-
-    // Change timezone
-    final ZonedDateTime withZoneSameDate = date
-      .withZoneSameInstant(ZoneId.of("Asia/Calcutta"));
-    System.out.println(withZoneSameDate);
-  }
-
-  @Override
-  public void printAdditionalInformation()
-  {
-    problemsWithDate2();
-    changingTimeZone();
-    changingTimeZone2();
-  }
-
-  public void problemsWithDate2()
-  {
-    try
-    {
-      System.out.println(LocalDate.of(13, 13, 13));
-    }
-    catch (final Exception e)
-    {
-      e.printStackTrace();
-    }
-  }
+	@Override
+	public String toString() {
+		return "Java 8 Date and Time API";
+	}
 
 }
