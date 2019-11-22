@@ -2,8 +2,8 @@
 
 ## Country Width and Time Zones
 
->> Both the contiguous states of the US and continental China are about 3000 miles wide 
->> - how many time zones does each region have?
+> Both the contiguous states of the US and continental China are about 3000 miles wide 
+> - how many time zones does each region have?
 
 ** China has 1 time zone, the contiguous states of the US have 5 **
 
