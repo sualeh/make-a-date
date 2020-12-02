@@ -1,13 +1,13 @@
 /**
- * Copyright 2014 Sualeh Fatehi
- * This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
- * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US.
+ * Copyright 2020 Sualeh Fatehi This work is licensed under the Creative Commons
+ * Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license,
+ * visit http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US.
  */
 package us.fatehi.timeapi.exercises;
 
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.nullValue;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -18,23 +18,19 @@ import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import us.fatehi.timeapi.exercises.Question4;
+public class TestQuestion4 {
 
-public class TestQuestion4
-{
-
-  private static final LocalDateTime testDateTime = LocalDateTime
-    .of(LocalDate.of(2014, Month.DECEMBER, 28), LocalTime.of(10, 30));
+  private static final LocalDateTime testDateTime =
+      LocalDateTime.of(LocalDate.of(2014, Month.DECEMBER, 28), LocalTime.of(10, 30));
   private Question4 question4;
   private ZoneId systemZoneId;
   private ZoneId otherZoneId;
 
-  @Before
-  public void setup()
-  {
+  @BeforeEach
+  public void setup() {
     question4 = new Question4();
 
     systemZoneId = ZoneId.systemDefault();
@@ -42,47 +38,38 @@ public class TestQuestion4
   }
 
   @Test
-  public void testAtZone()
-  {
+  public void testAtZone() {
     // 1. Test null
-    assertNull(question4.atZone(null, null));
+    assertThat(question4.atZone(null, null), is(nullValue()));
 
     // 2. Test an instant in the system default timezone
-    final Instant testInstant1 = testDateTime
-      .toInstant(getZoneOffset(systemZoneId));
-    assertEquals(ZonedDateTime.of(testDateTime, systemZoneId),
-                 question4.atZone(testInstant1, null));
+    final Instant testInstant1 = testDateTime.toInstant(getZoneOffset(systemZoneId));
+    assertThat(
+        question4.atZone(testInstant1, null), is(ZonedDateTime.of(testDateTime, systemZoneId)));
 
     // 3. Test an instant in some other timezone
-    final Instant testInstant2 = testDateTime
-      .toInstant(getZoneOffset(otherZoneId));
-    assertEquals(ZonedDateTime.of(testDateTime, otherZoneId),
-                 question4.atZone(testInstant2, otherZoneId));
+    final Instant testInstant2 = testDateTime.toInstant(getZoneOffset(otherZoneId));
+    assertThat(
+        question4.atZone(testInstant2, otherZoneId),
+        is(ZonedDateTime.of(testDateTime, otherZoneId)));
   }
 
   @Test
-  public void testToInstant()
-  {
+  public void testToInstant() {
 
     // 1. Test null
-    assertNull(question4.toInstant(null));
+    assertThat(question4.toInstant(null), is(nullValue()));
 
     // 2. Test an instant in the system default timezone
-    final Instant testInstant1 = testDateTime
-      .toInstant(getZoneOffset(systemZoneId));
-    assertEquals(testInstant1,
-                 question4.toInstant(testDateTime.atZone(systemZoneId)));
+    final Instant testInstant1 = testDateTime.toInstant(getZoneOffset(systemZoneId));
+    assertThat(question4.toInstant(testDateTime.atZone(systemZoneId)), is(testInstant1));
 
     // 3. Test an instant in some other timezone
-    final Instant testInstant2 = testDateTime
-      .toInstant(getZoneOffset(otherZoneId));
-    assertEquals(testInstant2,
-                 question4.toInstant(testDateTime.atZone(otherZoneId)));
+    final Instant testInstant2 = testDateTime.toInstant(getZoneOffset(otherZoneId));
+    assertThat(question4.toInstant(testDateTime.atZone(otherZoneId)), is(testInstant2));
   }
 
-  private ZoneOffset getZoneOffset(final ZoneId zoneId)
-  {
+  private ZoneOffset getZoneOffset(final ZoneId zoneId) {
     return zoneId.getRules().getOffset(testDateTime);
   }
-
 }
