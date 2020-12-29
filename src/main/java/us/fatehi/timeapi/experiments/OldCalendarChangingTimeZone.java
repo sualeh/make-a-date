@@ -1,8 +1,3 @@
-/**
- * Copyright 2014-2016 Sualeh Fatehi This work is licensed under the Creative Commons
- * Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license,
- * visit http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US.
- */
 package us.fatehi.timeapi.experiments;
 
 import static java.util.Calendar.DATE;
@@ -28,7 +23,7 @@ public class OldCalendarChangingTimeZone {
     System.out.println(
         "java.util.Calendar: Changing the time zone changes does not change the internal representation");
 
-    TimeZone nyTz = TimeZone.getTimeZone("America/New_York");
+    final TimeZone nyTz = TimeZone.getTimeZone("America/New_York");
     TimeZone.setDefault(nyTz);
     System.out.println("System default timezone: " + nyTz.getID());
     final GregorianCalendar date = new GregorianCalendar(2014, 11, 12);
@@ -44,7 +39,7 @@ public class OldCalendarChangingTimeZone {
             date.getTimeZone().getRawOffset()));
 
     // Move to another system, with another timezone
-    TimeZone calcuttaTz = TimeZone.getTimeZone("Asia/Calcutta");
+    final TimeZone calcuttaTz = TimeZone.getTimeZone("Asia/Calcutta");
     TimeZone.setDefault(calcuttaTz);
     System.out.println("Changing to new system default timezone: " + calcuttaTz.getID());
     print(date);

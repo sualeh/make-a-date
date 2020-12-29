@@ -1,8 +1,3 @@
-/**
- * Copyright 2014-2016 Sualeh Fatehi This work is licensed under the Creative Commons
- * Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license,
- * visit http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US.
- */
 package us.fatehi.timeapi.presentation.more;
 
 import java.time.DateTimeException;
@@ -24,8 +19,6 @@ import java.time.temporal.ChronoUnit;
  * represent a length of elapsed time. Examples of periods are "4 years, 8 days," and "1 hour." As
  * shown by these examples, periods are defined using calendar fields (years, days, hours, etc.),
  * rather than by an exact number of nanoseconds.
- *
- * @author Sualeh Fatehi
  */
 public class PeriodsAndDurations {
 
