@@ -1,13 +1,11 @@
 > **Please support this project by putting a :star: on it**
 
-[![Quick Build](https://github.com/sualeh/make-a-date-with-java/workflows/Quick%20Build/badge.svg)](https://github.com/sualeh/make-a-date-with-java/actions?query=workflow%3A%22Quick+Build%22)
-
 # Make a Date with Java
 
 **An overview of the Java Date-Time API**
 
 - Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**](https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing)
-- Includes fully working code examples from the presentation 
+- Includes fully working code examples from the presentation [![Quick Build](https://github.com/sualeh/make-a-date-with-java/workflows/Quick%20Build/badge.svg)](https://github.com/sualeh/make-a-date-with-java/actions?query=workflow%3A%22Quick+Build%22)
 - Includes solutions to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
 - Uses JUnit tests to explain how the code should behave.
 
