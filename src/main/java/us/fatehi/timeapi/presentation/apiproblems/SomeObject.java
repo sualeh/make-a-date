@@ -7,9 +7,8 @@ import javax.inject.Inject;
 
 public class SomeObject {
 
-  private Clock clock;
+  @Inject private Clock clock;
 
-  @Inject
   public void process() {
     final LocalDate date = LocalDate.now(clock);
     // ... do something with date
