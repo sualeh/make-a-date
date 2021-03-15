@@ -4,7 +4,7 @@
 
 **An overview of the Java Date-Time API**
 
-- Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**](https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing)
+- Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**]
 - Includes fully working code examples from the presentation
 - Includes solutions to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
 - Uses JUnit tests to explain how the code should behave.
@@ -15,7 +15,7 @@
 
 ## How to Use
 
-- Review the [Presentation on the Date-Time API](https://docs.google.com/presentation/d/1XfWjH8erWqTc9ixVh3UKkDGworZfsIn3L1QQqRGwVcg/present?usp=sharing)
+- Review the presentation [**Make a Date with Java**]
 - Take a look at the Java code and tests
 - Run the JUnit tests to see how the code is expected to work
 - Experiment!
@@ -28,3 +28,6 @@
 - Converting back and forth between old and new classes
   - [Convert java.util.Date to what “java.time” type?](http://stackoverflow.com/questions/36639154/convert-java-util-date-to-what-java-time-type)
   - [Convert java.util.Date to java.time.LocalDate](http://stackoverflow.com/questions/21242110/convert-java-util-date-to-java-time-localdate/21242111#21242111)
+
+
+[**Make a Date with Java**]: https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing
