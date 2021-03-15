@@ -1,3 +1,5 @@
+> **Please support this project by putting a :star: on it**
+
 [![Quick Build](https://github.com/sualeh/make-a-date-with-java/workflows/Quick%20Build/badge.svg)](https://github.com/sualeh/make-a-date-with-java/actions?query=workflow%3A%22Quick+Build%22)
 
 # Make a Date with Java
