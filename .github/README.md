@@ -4,7 +4,7 @@
 
 **An overview of the Java Date-Time API**
 
-- Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**](https://docs.google.com/presentation/d/1XfWjH8erWqTc9ixVh3UKkDGworZfsIn3L1QQqRGwVcg/present?usp=sharing)
+- Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**](https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing)
 - Includes fully working code examples from the presentation 
 - Includes solutions to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
 - Uses JUnit tests to explain how the code should behave.
