@@ -5,11 +5,13 @@
 **An overview of the Java Date-Time API**
 
 - Includes slides explaining the Java Date-Time API - see [**Make a Date with Java**](https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing)
-- Includes fully working code examples from the presentation [![Quick Build](https://github.com/sualeh/make-a-date-with-java/workflows/Quick%20Build/badge.svg)](https://github.com/sualeh/make-a-date-with-java/actions?query=workflow%3A%22Quick+Build%22)
+- Includes fully working code examples from the presentation
 - Includes solutions to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
 - Uses JUnit tests to explain how the code should behave.
 
 (See [Time Zones](TimeZones.md) for a quiz question on time-zones.)
+
+[![Quick Build](https://github.com/sualeh/make-a-date-with-java/workflows/Quick%20Build/badge.svg)](https://github.com/sualeh/make-a-date-with-java/actions?query=workflow%3A%22Quick+Build%22)
 
 ## How to Use
 
