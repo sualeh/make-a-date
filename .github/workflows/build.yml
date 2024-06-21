@@ -1,0 +1,29 @@
+name: Build All Branches
+
+on:
+  workflow_dispatch:
+  push:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - id: prepare-java-build
+      name: Prepare Maven build
+      uses: sualeh/prepare-maven-build@v1.4.0
+      with:
+        checkout-branch: main
+    - id: build-java
+      name: Java build and run tests
+      run: |
+        # Java build and run tests
+        cd Java
+        mvn \
+          --no-transfer-progress \
+          --batch-mode \
+          compile

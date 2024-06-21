@@ -1,6 +1,71 @@
-target/
+test.txt
+**/ijava*.*
+**/ijava
+# Eclipse
 .project
 .classpath
 .settings/
-~*.pptx
-*.pptx
+.loadpath
+.recommenders
+.externalToolBuilders/
+*.launch
+.springBeans
+.recommenders/
+.apt_generated/
+bin/
+
+# IntelliJ IDEA
+.idea/
+**/*.iml
+
+# Visual Studio Code
+.vscode/
+
+*.patch
+.clover
+.svn
+
+target/
+workspace/
+
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+/.vs
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
