@@ -8,17 +8,18 @@ Covers date and time concepts, common sources of errors, and the Java Date and T
 
 - **Overview**
   Goes over date and time concepts and common sources of errors.
-  - [Make a Date - Concepts]()
+  - [Make a Date - Concepts](https://sualeh.github.io/make-a-date/make-a-date/make-a-date.pdf)
   - [Date and Calendar in Java](https://docs.google.com/presentation/d/1iZZA0kTi3noP2wdnpHZLzHReynnBJ_yCSNmzqQPt_ew/edit?usp=sharing) the old way and new.
-- ** Modeling in SQL**
+  - [Time zones quiz](TimeZones.md)
+- **Modeling in SQL**
+  - [How to model date and time in SQL](https://sualeh.github.io/make-a-date/modeling-in-sql/modeling-in-sql.pdf)
 - **Java Date-Time API**
   Explains the Java Date-Time API and uses JUnit tests to explain how the code should behave.
-  - [**Make a Date with Java**]
-  - Includes fully working code examples from the presentation
-  - Solutions to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
+  - [How to model date and time in Java](https://sualeh.github.io/make-a-date/modeling-in-java/modeling-in-java.pdf)
+  - _Code Examples_
+    - [Fully working code examples from the presentation](https://github.com/sualeh/make-a-date/tree/main/Java/src/main/java/us/fatehi/timeapi/presentation)
+    - [Solutions](https://github.com/sualeh/make-a-date/tree/main/Java/src/main/java/us/fatehi/timeapi/exercises) to [Questions and Exercises: Date-Time API](http://docs.oracle.com/javase/tutorial/datetime/iso/QandE/questions.html)
 
-
-(See [Time Zones](TimeZones.md) for a quiz question on time-zones.)
 
 
 # Resources
