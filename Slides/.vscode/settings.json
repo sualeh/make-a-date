@@ -1,0 +1,73 @@
+{
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false,
+		"editor.quickSuggestions": {
+			"comments": "on",
+			"strings": "on",
+			"other": "on"
+		}
+	},
+	"editor.foldingImportsByDefault": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": false,
+	"editor.formatOnSaveMode": "modifications",
+	"editor.formatOnType": true,
+	"editor.lineHeight": 24,
+	"editor.minimap.enabled": false,
+	"editor.overviewRulerBorder": false,
+	"editor.tabSize": 2,
+	"editor.wrappingIndent": "indent",
+	"files.defaultLanguage": "markdown",
+	"files.trimTrailingWhitespace": true,
+	"git.autoStash": true,
+	"git.autofetch": true,
+	"git.fetchOnPull": true,
+	"git.followTagsWhenSync": true,
+	"git.postCommitCommand": "sync",
+	"git.pullBeforeCheckout": true,
+	"git.rebaseWhenSync": false,
+	"git.showActionButton": {
+		"commit": false,
+		"publish": false,
+		"sync": false
+	},
+	"scm.showActionButton": false,
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell",
+			"args": [
+				"-NoExit",
+				"/c",
+				"chcp.com 65001"
+			]
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [
+				"-NoExit",
+				"/c",
+				"chcp.com 65001"
+			],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash",
+			"env": {
+				"LANG": "C.UTF-8"
+			},
+			"args": [
+				"-c",
+				"chcp.com 65001;bash"
+			]
+		}
+	},
+	"workbench.editor.enablePreview": false,
+	"workbench.editorAssociations": {
+		"*.md": "vscode.markdown.preview.editor"
+	},
+	"markdown.marp.enableHtml": true
+}
