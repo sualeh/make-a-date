@@ -29,7 +29,7 @@ _class:
 
 
 ## Java Date and Time API
-![bg right opacity:.4](./calendar.jpg "Calendar")
+![bg right opacity:.4](../common/calendar.jpg "Calendar")
 
 
 ## Design Principles
@@ -176,13 +176,13 @@ Some useful temporal adjusters are built into
 - Strategy for extracting information from temporals
 - Externalize the process of querying
 - Examples
-  -  get the time zone in a temporal
-  -  check if date is February 29 in a leap year
-  -  calculate days until your next birthday
+  - get the time zone in a temporal
+  - check if date is February 29 in a leap year
+  - calculate days until your next birthday
 - `TemporalQueries` class has implementations of common queries
 
 
 ## Slides and Code
 
 [github.com/**sualeh/make-a-date**](https://github.com/sualeh/make-a-date)
-![width:300](./qr-code.png "GitHhub")
+![width:300](../common/qr-code.png "GitHub project")

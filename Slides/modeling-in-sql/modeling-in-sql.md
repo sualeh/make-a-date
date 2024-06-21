@@ -29,7 +29,7 @@ _class:
 
 
 ## Modeling in SQL
-![bg right opacity:.4](./calendar.jpg "Calendar")
+![bg right opacity:.4](../common/calendar.jpg "Calendar")
 
 
 ## SQL Data Types
@@ -52,4 +52,4 @@ _class:
 ## Slides and Code
 
 [github.com/**sualeh/make-a-date**](https://github.com/sualeh/make-a-date)
-![width:300](./qr-code.png "GitHhub")
+![width:300](../common/qr-code.png "GitHub project")

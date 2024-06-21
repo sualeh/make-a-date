@@ -109,7 +109,7 @@ Time zones in the USA
 - Chamorro Time Zone (ChT)
 
 
-## Quiz - Answer
+## Crazy Time Zones
 ![width:900](./az-time-zones.png "Arizona Time Zones")
 
 
@@ -133,7 +133,6 @@ Time zones in the USA
 
 
 ## ISO 8601 on xkcd
-
 ![iso_8601.png](https://imgs.xkcd.com/comics/iso_8601.png)
 
 
@@ -147,4 +146,4 @@ Time zones in the USA
 ## Slides and Code
 
 [github.com/**sualeh/make-a-date**](https://github.com/sualeh/make-a-date)
-![width:300](./qr-code.png "GitHhub")
+![width:300](../common/qr-code.png "GitHub project")
