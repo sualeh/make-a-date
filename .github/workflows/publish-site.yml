@@ -22,7 +22,7 @@ jobs:
 
     - id: checkout-code
       name: Checkout
-      uses: actions/checkout@latest
+      uses: actions/checkout@v4
 
     - id: marp-build
       name: Render Slides with Marp
@@ -41,11 +41,11 @@ jobs:
 
     - id: configure-pages
       name: Setup Pages
-      uses: actions/configure-pages@latest
+      uses: actions/configure-pages@v5
 
     - id: upload-artifact
       name: Upload artifact
-      uses: actions/upload-pages-artifact@latest
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ./Slides/bin
 
@@ -62,4 +62,4 @@ jobs:
 
     - id: deploy-pages
       name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@latest
+      uses: actions/deploy-pages@v4
