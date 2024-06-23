@@ -68,7 +68,7 @@ Humans have a *different* view of time:
 - Continuous timelines
 - Calendar systems
 - Arbitrary units like years, months, days, hours
-- Time zones, and daylight savings rules
+- timezones, and daylight savings rules
 
 
 ## Calendar System
@@ -87,7 +87,7 @@ Humans have a *different* view of time:
 - UTC is sometimes denoted by Z (Zulu)
 
 
-## Time Zone
+## timezone
 - Region with uniform standard time for legal, commercial, social, and political purposes
 - Some countries observe daylight saving time
 - Offset from UTC (UTC-12 to UTC+14)
@@ -96,23 +96,23 @@ Humans have a *different* view of time:
 ## Quiz - Question
 ![bg right opacity:.4](./quiz.jpg "Quiz")
 
-How many time zones are in the USA?
+How many timezones are in the USA?
 
 
 ## Quiz - Answer
-Time zones in the USA
-- Eastern Time Zone (ET)
-- Central Time Zone (CT)
-- Mountain Time Zone (MT)
-- Pacific Time Zone (PT)
-- Alaska Time Zone (AKT)
-- Hawaii-Aleutian Time Zone (HAT)
-- Samoa Time Zone (ST)
-- Chamorro Time Zone (ChT)
+timezones in the USA
+- Eastern timezone (ET)
+- Central timezone (CT)
+- Mountain timezone (MT)
+- Pacific timezone (PT)
+- Alaska timezone (AKT)
+- Hawaii-Aleutian timezone (HAT)
+- Samoa timezone (ST)
+- Chamorro timezone (ChT)
 
 
-## Crazy Time Zones
-![width:900](./az-time-zones.png "Arizona Time Zones")
+## Crazy timezones
+![width:900](./az-time-zones.png "Arizona timezones")
 
 
 ## Local Date and Time
@@ -139,10 +139,10 @@ Time zones in the USA
 
 
 ## Common Sources of Error
-- Converting a local date and time into date and time
-- Storing date and time into local date and time
+- Converting a local date and time into date and time (with timezone offset)
+- Storing date and time (with timezone offset) into local date and time
 - Using SQL `TIMESTAMP` to store events (without timezone information)
-- Daylight savings time boundaries - 23 or 25 hours in a day
+- Not handling daylight savings time boundaries - 23 or 25 hours in a day
 
 
 ## Slides and Code
