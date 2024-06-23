@@ -45,7 +45,7 @@ Let us start with some concepts
 - January 0, 0 - MATLAB
 - January 1, 1 - .NET
 - January 1, 1601 - COBOL, Windows
-- January 1, 1900 - LISP, SNTP
+- January 1, 1900 - LISP, SNTP for time
 - January 1, 1970 - Unix Epoch
   Linux, Mac OS X, Java, C, JavaScript, PHP, Python, Ruby
 
@@ -58,6 +58,8 @@ Machines have *one* view of time:
 
 ## Instant
 - Point on a discretized timeline
+- .NET measures "ticks" of 100 nanoseconds in `DateTimeOffset`
+- Java `Instant` has nanosecond precision
 - Use for event time-stamps
 
 
