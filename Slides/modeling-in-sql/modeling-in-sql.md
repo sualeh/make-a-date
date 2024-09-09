@@ -49,6 +49,10 @@ _class:
   - `DATETIMEOFFSET` in Microsoft SQL Server
 
 
+## Common Sources of Error
+- Using SQL `TIMESTAMP` to store events (without timezone information)
+
+
 ## Slides and Code
 
 [github.com/**sualeh/make-a-date**](https://github.com/sualeh/make-a-date)

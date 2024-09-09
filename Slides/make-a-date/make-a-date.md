@@ -68,7 +68,7 @@ Humans have a *different* view of time:
 - Continuous timelines
 - Calendar systems
 - Arbitrary units like years, months, days, hours
-- timezones, and daylight savings rules
+- Timezones, and daylight savings rules
 
 
 ## Calendar System
@@ -87,7 +87,7 @@ Humans have a *different* view of time:
 - UTC is sometimes denoted by Z (Zulu)
 
 
-## timezone
+## Timezone
 - Region with uniform standard time for legal, commercial, social, and political purposes
 - Some countries observe daylight saving time
 - Offset from UTC (UTC-12 to UTC+14)
@@ -100,7 +100,7 @@ How many timezones are in the USA?
 
 
 ## Quiz - Answer
-timezones in the USA
+Timezones in the USA
 - Eastern timezone (ET)
 - Central timezone (CT)
 - Mountain timezone (MT)
@@ -111,13 +111,14 @@ timezones in the USA
 - Chamorro timezone (ChT)
 
 
-## Crazy timezones
+## Crazy Timezones
 ![width:900](./az-time-zones.png "Arizona timezones")
 
 
 ## Local Date and Time
 - Local date and time is missing timezone data
-- Timezone may be implied: "Meet me at 6 pm"
+- Timezone may be implied: 
+  "Meet me on May 5 at 4 pm"
 
 
 ## Local Date and Time Examples
@@ -138,11 +139,36 @@ timezones in the USA
 ![iso_8601.png](https://imgs.xkcd.com/comics/iso_8601.png)
 
 
+## Advantages of Using ISO 8601
+
+- **Consistency**: Ensures uniform date and time representation
+- **Interoperability**: Facilitates data exchange between systems
+- **Sorting and Comparison**: Simplifies ordering and comparing dates and times
+- **Timezone Handling**: Supports global applications with timezone info
+- **Readability**: Easy for both machines and humans to parse
+
+
+## Examples of ISO 8601 Local Date and Time
+- Local date: `YYYYMMDD` or `YYYY-MM-DD`
+  "20240906" or "2024-09-06" for September 6, 2024
+- Local Time: `HHMMSS` or `HH:MM:SS`
+  "153045" or "15:30:45"
+- Local Date and Time: `YYYY-MM-DDTHH:MM:SS`
+  "2024-09-06T15:30:45"
+
+
+## Examples of ISO 8601 Date and Time
+- UTC time: `YYYY-MM-DDTHH:MM:SSZ`
+  "2024-09-06T15:30:45Z" for UTC
+- With Timezone Offset: `YYYY-MM-DDTHH:MM:SS±HH:MM`
+  "2024-09-06T15:30:45+02:00" for 2 hours ahead of UTC
+
+
 ## Common Sources of Error
 - Converting a local date and time into date and time (with timezone offset)
-- Storing date and time (with timezone offset) into local date and time
-- Using SQL `TIMESTAMP` to store events (without timezone information)
+- Storing date and time (with timezone offset) into local date and time fields
 - Not handling daylight savings time boundaries - 23 or 25 hours in a day
+- Incorrect or incomplete parsing of date and time strings
 
 
 ## Slides and Code
