@@ -37,15 +37,13 @@ Let us start with some concepts
 ## Epoch
 - Reference point to measure time
 - May be based on religious or political milestones
-- Divides the timeline into eras
+- Divides the timeline into **eras**
 - Start of a particular era
 
 
 ## Computer System Epochs
-- January 0, 0 - MATLAB
-- January 1, 1 - .NET
-- January 1, 1601 - COBOL, Windows
-- January 1, 1900 - LISP, SNTP for time
+- January 1, 1601 - COBOL, Windows, .NET
+- January 1, 1900 - Network Time Protocol (NTP)
 - January 1, 1970 - Unix Epoch
   Linux, Mac OS X, Java, C, JavaScript, PHP, Python, Ruby
 
