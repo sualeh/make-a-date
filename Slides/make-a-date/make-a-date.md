@@ -36,9 +36,9 @@ Let us start with some concepts
 
 ## Epoch
 - Reference point to measure time
+- An **epoch** marks the start of an **era**
+- Divides the timeline into eras
 - May be based on religious or political milestones
-- Divides the timeline into **eras**
-- Start of a particular era
 
 
 ## Computer System Epochs
@@ -87,7 +87,7 @@ Humans have a *different* view of time:
 
 ## Timezone
 - Region with uniform standard time for legal, commercial, social, and political purposes
-- Some countries observe daylight saving time
+- Rules for daylight saving time
 - Offset from UTC (UTC-12 to UTC+14)
 
 
@@ -115,7 +115,7 @@ Timezones in the USA
 
 ## Local Date and Time
 - Local date and time is missing timezone data
-- Timezone may be implied: 
+- Timezone may be implied:
   "Meet me on May 5 at 4 pm"
 
 
