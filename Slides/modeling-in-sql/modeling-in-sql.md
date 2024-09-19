@@ -44,7 +44,7 @@ _class:
 
 ## Modeling instants
 - `TIMESTAMP WITH TIME ZONE` is the only type that can accurately model machine time
-- Called 
+- Called
   - `TIMESTAMPTZ` in PostgreSQL
   - `DATETIMEOFFSET` in Microsoft SQL Server
 
