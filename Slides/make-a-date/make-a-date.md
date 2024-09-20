@@ -89,6 +89,7 @@ Humans have a *different* view of time:
 - Region with uniform standard time for legal, commercial, social, and political purposes
 - Rules for daylight saving time
 - Offset from UTC (UTC-12 to UTC+14)
+- Includes rules for when offset changes, and historical change information
 
 
 ## Quiz - Question
@@ -98,15 +99,8 @@ How many timezones are in the USA?
 
 
 ## Quiz - Answer
-Timezones in the USA
-- Eastern timezone (ET)
-- Central timezone (CT)
-- Mountain timezone (MT)
-- Pacific timezone (PT)
-- Alaska timezone (AKT)
-- Hawaii-Aleutian timezone (HAT)
-- Samoa timezone (ST)
-- Chamorro timezone (ChT)
+11
+![width:900](./us-time-zones.png "United States timezones")
 
 
 ## Crazy Timezones

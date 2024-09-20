@@ -69,5 +69,9 @@
 	"workbench.editorAssociations": {
 		"*.md": "vscode.markdown.preview.editor"
 	},
-	"markdown.marp.enableHtml": true
+	"markdown.marp.enableHtml": true,
+	"cSpell.words": [
+		"Fatehi",
+		"marp"
+	]
 }
